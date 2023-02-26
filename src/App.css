@@ -1,42 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
 #root {
-  max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
+  /* text-align: center; */
+}
+
+.container {
+  height: 697px;
+  width: 450px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.card__top {
+  height: 220px;
+  width: 450px;
+  border-radius: 10px 10px 0 0;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.card__topImage {
+  border-radius: 10px 10px 0 0;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card__bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.card__bottomTitle {
+  font-size: 28px;
+  font-weight: 700;
+  font-family: Red Hat Display;
+  color: #1f2e55;
 }
-
-.card {
-  padding: 2em;
+.card__bottomSubtitle {
+  color: #717FA6;
+  font-size: 16px;
+  font-weight: 300;
+  max-width: 320px;
+  font-family: Red Hat Display;
 }
-
-.read-the-docs {
-  color: #888;
+.card__bottomSubscriptionWrapper {
+  display: flex;
+  flex-direction: row;
+  font-family: Red Hat Display;
+  background-color: #f7f9ff;
+  width: 354px;
+  height: 98px;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.card__bottomSubscriptionLeft {
+  display: flex;
+  flex-direction: row;
+}
+.card__bottomSubscriptionIcon {
+  padding: 1rem;
+}
+.card__bottomSubscriptionStack {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+.card__bottomSubscriptionStackTitle {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: -0.5rem;
+}
+.card__bottomSubscriptionStackPrice {
+  font-weight: 300;
+  color: #717fa6;
+  font-size: 16px;
+}
+.card__bottomSubscriptionRightLink {
+  font-size: 14px;
+  color: #382ae1;
+  text-decoration: underline;
+  margin-right: 1rem;
+}
+.card__bottomBtnWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 3.3rem;
+}
+.card__primaryBtn {
+  background-color: #382ae1;
+  color: #fff;
+  width: 354px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-family: Red Hat Display;
+  font-size: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card__secondaryBtn {
+  background-color: transparent;
+  color: #717fa6;
+  width: 354px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-family: Red Hat Display;
+  font-size: 15px;
+  margin-top: 0.5rem;
 }
