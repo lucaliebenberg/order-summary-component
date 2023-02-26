@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
 
 #root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
   padding: 2rem;
   /* text-align: center; */
@@ -132,5 +135,32 @@
 .card__secondaryBtn:hover {
   color: #1F2E55;
   cursor: pointer;
+}
+
+
+/* media queries */
+@media screen and (max-width: 350px) {
+  .container {
+    height: 567px;
+    width: 327px;
+  }
+  .card__top, .card__topImage {
+    height: 160px;
+    width: 327px;
+  }
+  .card__bottomTitle {
+    font-size: 22px;
+  }
+  .card__bottomSubscriptionWrapper {
+    height: 81px;
+    width: 279px;
+  }
+  .card__primaryBtn, .card__secondaryBtn {
+    height: 50px;
+    width: 279px; 
+  }
+  .card__bottomBtnWrapper {
+    margin-top: 2.2rem;
+  }
 }
 
