@@ -83,6 +83,12 @@
   color: #382ae1;
   text-decoration: underline;
   margin-right: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+.card__bottomSubscriptionRightLink:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: #766CF1;
 }
 .card__bottomBtnWrapper {
   display: flex;
@@ -103,6 +109,11 @@
   font-family: Red Hat Display;
   font-size: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 0.3s ease-in-out;
+}
+.card__primaryBtn:hover {
+  background-color: #766CF1;
+  cursor: pointer;
 }
 .card__secondaryBtn {
   background-color: transparent;
@@ -116,4 +127,10 @@
   font-family: Red Hat Display;
   font-size: 15px;
   margin-top: 0.5rem;
+  transition: all 0.3s ease-in-out;
 }
+.card__secondaryBtn:hover {
+  color: #1F2E55;
+  cursor: pointer;
+}
+
